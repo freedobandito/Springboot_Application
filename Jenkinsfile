@@ -10,7 +10,7 @@ pipeline {
         stage('Preparation') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/Raghugithub9/Springboot_Application.git'
+                git branch: 'main', url: 'https://github.com/freedobandito/Springboot_Application.git'
                 
             }
         }
@@ -58,7 +58,7 @@ pipeline {
         stage('Test') {
             steps {
                 // Get some code from a GitHub repository
-                git 'https://github.com/Raghugithub9/ChatApplication.git'
+                git branch: 'main', url: 'https://github.com/freedobandito/Springboot_Application.git'
                 sh "mvn clean test"
                 
             }
